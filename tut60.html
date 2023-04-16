@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+
+<body>
+    <div class="container">
+        This is a container
+    </div>
+    <script>
+        //function greet() {
+        //console.log('Good Morning');
+        //}
+
+        // For Shortcut Method-- >
+        // Arrow Function-- >
+        let greet = () => {
+            console.log('Good Morning');
+        }
+
+        //Ex. 1 -->
+        //let sum = (a,b)=>{
+        //return a+b;
+        //};
+
+        //Ex. 2-->
+        //let sum = (a+b)=> a+b;
+        //greet();
+
+        // Use of Arrow-->
+        setTimeout(() => {
+            console.log('WE are inside setTimeout');
+        }, 3000);
+
+        // Laxical 'this'-->
+        let obj1 = {
+            greeting: 'Good Morning',
+            names: ["Shraddha", "Khyati", "Nikita", "Amruta"],
+            Speak() {
+                this.names.forEach((student) => {
+                    console.log(this.greeting + "Kukdo Koo" + student);
+                
+                });
+            }
+        }
+        obj1.Speak();
+        greet();
+    </script>
+</body>
+
+</html>

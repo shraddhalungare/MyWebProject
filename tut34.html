@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px 12px;
+            margin: 23px 12px;
+            background-color: rgb(183, 216, 231);
+
+/* for Shadow: down= + and up= - */
+            /* box-shadow: 10px 13px rgb(4, 73, 119); 
+
+/* Blurr radius for Blurr shadow */
+            /* box-shadow: 7px 5px 10px rgb(4, 73, 119); */
+            /* box-shadow: -7px -5px 10px rgb(4, 73, 119);  /* for upside shadow */
+
+/* spread redius for spreding 
+            box-shadow: -7px -5px 10px 24px rgb(4, 73, 119);  */
+
+/* for inside the box */
+            box-shadow: inset 3px 77px rgb(4, 73, 119);
+
+/* for multiple shadow */
+            box-shadow: 11px 13px  rgb(4, 73, 119), 22px 19px rgb(101, 214, 101);
+        }
+
+
+/* for Text Shadow */
+        .card h2{
+            text-shadow:3px 4px rgb(192, 192, 189);
+            text-shadow:3px 4px rgb(192, 192, 189), 4px 5px rgb(214, 214, 163) ;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is C++ course</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores sapiente alias totam culpa aut. Magnam
+                labore numquam nisi dolor facilis voluptatum consequuntur? Neque cum facilis dolorem sit placeat.
+                Consequuntur vitae quis adipisci eius dicta? Reiciendis deserunt nemo obcaecati, beatae quo id
+                consequuntur vel eligendi.</p>
+        </div>
+
+        <div class="card" id="card-2">
+            <h2>This is python course</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores sapiente alias totam culpa aut. Magnam
+                labore numquam nisi dolor facilis voluptatum consequuntur? Neque cum facilis dolorem sit placeat.
+                Consequuntur vitae quis adipisci eius dicta? Reiciendis deserunt nemo obcaecati, beatae quo id
+                consequuntur vel eligendi.</p>
+        </div>
+
+        <div class="card" id="card-3">
+            <h2>This is js course</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores sapiente alias totam culpa aut. Magnam
+                labore numquam nisi dolor facilis voluptatum consequuntur? Neque cum facilis dolorem sit placeat.
+                Consequuntur vitae quis adipisci eius dicta? Reiciendis deserunt nemo obcaecati, beatae quo id
+                consequuntur vel eligendi.</p>
+        </div>
+    </div>
+</body>
+
+</html>

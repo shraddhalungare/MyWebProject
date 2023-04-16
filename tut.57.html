@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> js Events </title>
+</head>
+<style>
+    #btn {
+        padding: 10px, 14px;
+        color: rgb(38, 3, 102);
+        border: 2px solid rgb(19, 17, 17);
+        font-weight: bold;
+        background-color: rgb(205, 237, 247);
+        border-radius: 8px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+
+    <!-- for Click Event -->
+    <div class="container">
+        <h1> This is my heading </h1>
+        <p id="Para"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint amet deserunt cum aut, ipsum
+            repellendus vero neque enim officia expedita unde quo consequuntur laboriosam consectetur illum dolores
+            dignissimos eius beatae aliquam quos deleniti voluptates ea? Sed placeat veritatis dolorem blanditiis error,
+            numquam nam ab sunt hic adipisci, id consequuntur dolores ipsa cupiditate accusamus laudantium consectetur
+            quae, ea necessitatibus quidem perferendis! Quis maxime veritatis, accusamus nulla quidem, debitis aperiam
+            similique repellendus deserunt totam a soluta impedit ut, distinctio hic saepe. Unde, qui quasi quam
+            consequatur placeat a dolorum sed assumenda consectetur sint reprehenderit obcaecati dolores repellendus
+            numquam corporis id dicta quibusdam saepe veritatis. Fuga accusantium non necessitatibus itaque sequi
+            accusamus aspernatur excepturi, atque nemo inventore eaque maxime error omnis voluptas iste! Voluptatem
+            veniam, omnis amet similique eum, eius quisquam consequuntur dicta a molestiae doloribus impedit sint
+            cupiditate, quo dolorem illo cum laborum? Asperiores quaerat eligendi quidem nam voluptatem, aliquid
+            accusantium earum dolore dolor autem sed quisquam officiis voluptatibus, libero natus. Repudiandae quae
+            harum laboriosam iusto. Voluptatem nesciunt distinctio illo deleniti at quibusdam beatae ratione autem
+            corrupti quod repellendus, sint doloribus, adipisci soluta ab commodi assumenda voluptatum accusantium quam
+            cum! Aut, vitae assumenda rerum nulla, laboriosam eaque odit consequatur earum eligendi, obcaecati veniam
+            esse amet qui illum dolores hic deserunt maxime! Nihil ad harum omnis. Consequuntur voluptatem ullam qui
+            odio laborum nesciunt accusamus nostrum optio consectetur omnis nihil unde, similique fuga tempore saepe in
+            excepturi?</p>
+    </div>
+    <button id="btn" onclick="toogleHide()"> Show/Hide </button>
+    <script>
+        let Para = document.getElementById('Para');
+            Para.addEventListener('mouseover', function run(){
+                alert('Mouse Inside');
+            });
+
+            // For MouseOut-->
+            Para.addEventListener('mouseout', function run(){
+                alert('Mouse Outside')
+            });
+            
+        function toogleHide(){
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+
+            // For event listener-->
+            //Para.style.display = "none";
+
+            // For Showing Paragraph--->
+            if(Para.style.display!="none"){
+                Para.style.display="none";
+            }
+            else{
+                Para.style.display="block";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

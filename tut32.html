@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth psuedo selectors</title>
+    <style>
+        .container{
+            display: block;
+            margin: auto;
+            width: 233px;
+        }
+        input{
+            display: block;
+        }
+
+/* we can add psuedo selector by targeting attributes */
+        input[type="text"]{
+            padding: 23px;
+            border: 2px solid rgb(87, 48, 228);
+        }
+
+/* allow those anchor tag whose target is set */      
+        a[target]{
+            font-size: 24px;
+            color: rgb(189, 15, 15);
+        }
+        a[target="_self"]{                  /* _self is type of target */
+            font-size: 24px;
+            color: rgb(22, 90, 8);
+        }
+
+/* this will apply css on 3rd child psuedo selector 
+        li:nth-child(3){
+            color: rgb(233, 95, 114);
+        } */
+
+/* this will apply css on every 3rd child in list 
+        li:nth-child(2n+0){
+            color: rgb(233, 95, 114);
+        } */
+
+/* Odd child 
+        li:nth-child(odd){
+            color: rgb(105, 27, 231);
+        } */
+
+/* even child */
+        li:nth-child(even){
+            color: rgb(46, 236, 78);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank"> Go To Google </a></h1>
+        <h1><a href="http://facebook.com" target="_self"> Go To facebook </a></h1>
+        <form action="" class="form control">
+            <input type="text" placeholder="enter your name">
+            <input type="password" placeholder="enter your password">
+            <input type="submit" placeholder="submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">Item1</li>
+            <li class="item" id="item-2">Item2</li>
+            <li class="item" id="item-3">Item3</li>
+            <li class="item" id="item-4">Item4</li>
+            <li class="item" id="item-5">Item5</li>
+            <li class="item" id="item-6">Item6</li>
+            <li class="item" id="item-7">Item7</li>
+            <li class="item" id="item-8">Item8</li>
+            <li class="item" id="item-9">Item9</li>
+            <li class="item" id="item-10">Item10</li>
+        </ul>
+    </div>
+</body>
+
+</html>

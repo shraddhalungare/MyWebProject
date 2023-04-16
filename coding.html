@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Coding Practices</title>
+</head>
+
+<body>
+    <script>
+        //------ lib.js ------</span>
+        export const sqrt = Math.sqrt;
+        export function square(x) {
+           return x * x;
+        }
+        export function diag(x, y) {
+            return sqrt(square(x) + square(y));
+        }
+
+        //------ main.js ------</span>
+        { square, diag }
+        console.log(square(5)); // 25
+        console.log(diag(4, 3)); // 5
+    </script>
+</body>
+
+</html>

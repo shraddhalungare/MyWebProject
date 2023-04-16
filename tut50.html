@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Scope and conditionals </title>
+</head>
+<body>
+    <div>
+        <u1>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+        </u1>
+    </div>
+    <script>
+        //var string1 = "This is a string";
+        //var string1 = "This is a string";
+        //console.log(string1);
+
+        //let a = "u";     // here we use let for global or any fun variable ,instead of using var
+        //let a ="u6";     // if we put another let here or in out of cursul, it gives us error 
+        //{
+            //let a = "u6";
+            //console.log(a);
+        //}
+        //console.log(a);   // if we put another console here or in out of cursul, it gives us error
+        // let varible is changeble.
+
+        //const a =" This cannot be changed";   //for constant ( unchangable)
+        //a = "I want to change this. This cannot be changed"; //we get error here, cause we can't change constant thimgs
+        //console.log(a);
+
+        //let age = "34";
+        //let age = "5";
+        //if(age>18){
+            //console.log("You can drink water");
+        //}
+        //else if(age==2){   // == is for comparision
+            //console.log("Age is 2")
+        //}
+        //else{
+            //console.log("You can drink Cold Drink");
+        //}
+
+        // switch case statements
+        //const cups = 4;
+        //const cups = 41;
+        const cups = 43;
+        switch (cups) {
+            case 4:
+                console.log("The value of cups is 4")
+                break;
+
+            case 41:
+                console.log("The value of cups is 41")
+                break;
+
+            case 42:
+                console.log("The value of cups is 42")
+                break;
+
+            case 43:
+                console.log("The value of cups is 43")
+                break;
+        
+            default:
+                console.log("The value of cups is none of 4, 41, 42, 43")
+                break;  // If we not use break here and all above then it will run all the cases after the first one
+        }
+
+    </script>
+</body>
+</html>

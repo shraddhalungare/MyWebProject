@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    width: 98%;
+    
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+/* Navbar Logo and Img */
+#logo{
+    margin: 5px 6px;
+    width: 56px;
+}
+#logo img{
+    margin: 6px -14px;
+    height: 80px;
+    border-radius: 10px;
+    width: 96px;
+}
+
+/* Navbar List Styling */
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;   
+}
+#navbar ul li{
+    /*color: white;*/
+    list-style: none;
+    font-size: 1.5rem;
+    height: 34px;
+}
+#navbar ul li a{
+    color: rgb(14, 12, 12);
+    display: block;
+    padding: -7px 13px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin: 10px;
+}
+#navbar ul li a:hover{  /* fafter click styling*/
+    color: white;
+    background-color: rgb(30, 6, 117);
+}
+.search{
+    float: right;
+    color: black;
+    padding:0px 0px 0px 715px;
+}
+#navbar input{
+    border: 2px solid black;
+    border-radius: 53px;
+    padding: 3px 35px;
+    width: 43px;
+}
+
+/* Home Section */  /* After complete Navbar */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 10px 0px;
+    height: 440px;               /* our services */
+}
+/* Background img --> Use Psuedo selector*/
+#home::before{
+    content: ""; 
+    background-color: rgb(3, 3, 46);
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    height: 800px;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+/*heading*/
+#home h1{
+    color: white; 
+    font-size: 80px;
+    font-family: 'emoji';
+    padding:  0px 0px 32px 90px;
+    margin: 40px 0px 4px 0px;
+}
+/* paragraph*/
+#home p{
+    color: white;
+    font-size: 1.2rem;
+    padding: 0px 0px 0px 90px;
+    width: 600px;
+}
+
+/* img places  */
+#place-section{
+    height: 250px;
+    position: relative;
+}
+
+#places::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(3, 3, 46) ;
+    width: 80%;
+    height: 250px;
+    z-index: -1;
+    opacity: 0.5;
+}
+#places{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+#place-item{
+    padding: 34px;
+}
+#places img{
+    height: 300px;
+    width: 250px;
+    padding: 34px;
+    margin: 4px;
+    border-radius: 96px 96px 0px 96px;
+}
+div.desc {
+    text-align: center;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 100px;
+}
+
+
+/* About Us */
+#about{
+    margin:343px 0px 0px 0px;
+    display: flex;  
+    height: 417px;         
+}
+#about .box{
+    margin: 5px 10px;
+    padding: 34px;
+    border-radius: 10px;
+    background-color: white
+}
+/* heading */
+#about h2{
+    color: rgb(12, 11, 11);
+    margin: 3px 0px 0px 0px;
+    width: 400px;
+    padding: 34px 0px 0px 0px;
+    
+}
+/* paragraph */
+#about p{
+    color: rgb(12, 11, 11);
+    font-size: 1.2rem;
+    width: 600px;
+    margin: 4px 0px 0px 23px;
+    float: left;
+}
+
+
+#about .box img{
+    width: 460px;
+    float: right;
+    margin: 0px;
+    padding: 45px;
+    border-radius: 153px 9px 153px 9px;
+}
+
+/* Services */
+#services{
+    margin: 0px;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+}
+#services::before{
+        content: "";
+        position: absolute;
+        background: url('../b-img.jpg')no-repeat center center/cover;
+        width: 100%;
+        height: 449px;
+        z-index: -1;
+        opacity: 0.5;
+}
+#services .grid{
+    border: 2px solid rgb(17, 15, 15);
+    margin: 22px 29px ;
+    padding: 18px;
+    border-radius: 10px;
+    background-color: rgb(225, 241, 221);   
+    gap: 10px;
+}
+#services .grid img{
+    height: 154px;
+    margin: 57px 125px;
+    display: block;
+    width: 99px;
+}
+#services img{
+    width: 34px;
+}
+
+#services p{
+    color: rgb(12, 11, 11);
+    font-size: 1rem;
+    width: 350px;
+    margin: -89px 0px 88px 0px;
+    text-align: center;
+}
+  
+/* Contact */
+#contact{
+        margin:27px 48px 24px 48px;
+        display: flex;      
+        background-color: rgb(199, 127, 139);    
+}
+
+#contact::before{
+    height: 34px;
+}
+#contact.box{
+        margin: 5px 10px;
+        padding: 34px;
+        border-radius: 10px;
+        background-color: white
+}
+#client{
+    float: right;
+    display: flex;
+}
+img{
+    width: 34px;
+    margin: -98px 71px 50px -60px;
+    width: 34px;
+}
+
+/* heading */
+#contact h2{
+    color: rgb(12, 11, 11);
+    margin: 3px 0px 24px 144px;
+    width: 400px;
+    padding: 34px 0px 0px 0px;
+}
+#contact h3{
+    font-size: 1.8rem;
+    margin: 83px 0px -94px -49px;
+}
+/* paragraph */
+#contact p{
+    color: rgb(12, 11, 11);
+    font-size: 1.4rem;
+    width: 643px;
+    margin: 12px 0px 6px 14px;
+    float: right;
+}
+
+
+#contact .box img{
+    width: 302px;
+    float: left;
+    margin:22px 167px 22px 76px;
+    padding: 9px;
+    border-radius: 173px;
+}
+#contact a{
+    margin: 0px 6px 52px 33px;
+    font-size: 26px;
+    color: #11197c;
+}
+
+/* footer */
+footer{
+    background: black;
+    color: white;
+    padding: 14px 450px;
+    
+}
+
+/* Utility Classes --> ( we can use these for paragraph also) */
+.h-primary{
+    font-size: 3rem;
+    padding: 0px 0px 34px 15px; 
+}
+.h-secondary{
+    font-size: 2rem;
+    padding: 0px 0px 0px 60px;
+    margin: 0px 41px 12px 0px;
+    height: 34%;
+    width: 100%
+}
+
+/* Button */
+.btn{
+    padding: 18px 20px;
+    border: 2px solid rgb(10, 9, 9);
+    border-radius: 12px;
+    background-color: rgb(124, 42, 46);
+    color: white;
+    margin: 60px 230px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.btn:hover{
+    color: rgb(242, 248, 248);
+    background-color: rgb(2, 54, 9);
+}
+

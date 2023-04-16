@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+
+<body>
+    <div class="container">
+        This is a container
+    </div>
+    <script>
+        console.log("This is tutorial 55");
+
+        // For Loops--
+        //let i = 0;
+        //for(i=0; i<3;i++){    // In this i<3 is our condition. and given is i=0, i=1<3, i=2<3 but i=3 which is not < 3.
+        //    console.log(i);
+        //}
+
+        // for iterates a array, and array how for loop used-->
+        let friends = ["Rohan", "Sanjay", "Shraddha", "Khyti", "Nikita"]
+        //for (let index = 0; index < friends.length; index++) {
+        //    console.log("Hello friends" + friends[index]);    
+        //}    // here index=0, next index<friends length (which our condition )which is 4, next its print o to 4
+
+        // For Each loop--->
+        //friends.forEach(function f(element) {
+        //    console.log(" Hello Friend , " + element + " to modern JavaScript ")   // it gives us same thing, as above.
+        // });
+
+        // For Off loop-->
+        for (element of friends) {
+            console.log(" Hello Friend , " + element + " to modern JavaScript again ")
+        }
+
+        // For-In Loop -->
+        let employee = {
+            name: "Shraddha",
+            salary: 100,
+            channel: "CwS"
+        }
+        // use this loop to iterate over in javascript.
+        for (key in employee) {
+            console.log(`The ${key} of employee is ${employee[key]}`);
+        }
+
+        // While Loop -->
+        let i = 0;
+        while (i < 4) {  // our condition is i<4
+            console.log(`${i} is less than 4`);
+            i++;
+        }
+
+        //  do-while loop-->
+        let j = 34;
+        do {
+            console.log(`${j} is less than 4`);
+            j++;
+        } while (j < 4);  // our condition is i<4
+
+
+
+
+    </script>
+</body>
+
+</html>

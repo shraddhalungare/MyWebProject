@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Z-index</title>
+    <style>
+        .box{
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+        #box1{
+            background-color: rgb(210, 253, 167);
+            position: relative;
+            top: 49px;
+            z-index: 36;
+         }
+
+        #box2{
+            background-color: rgb(221, 81, 81);
+
+            /* z-index will work on all position expect static(default) */
+            position: relative;
+            top: 14px; 
+            z-index: -1;  /* box shown top of 3-D with higher stack order */
+            /* display: none;  2) /* its also vanish the reserved position */
+
+            /* visibility: hidden;  1) /* hide visibility at reserved position*/
+            }
+
+        #box3{background-color: rgb(150, 182, 241); }
+
+        #box4{background-color: rgb(226, 124, 201); }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>
