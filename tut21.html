@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> pseudo element and more designings </title>
+    <style>
+        .Container{
+            border: 2px solid #00008b;
+            background-color: rgb(176, 247, 176);
+            padding:34px;
+            margin: 34px auto;
+            width: 666px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{  /*for Arrow Pointer*/
+            color: rgb(235, 143, 52);
+            background-color: rgb(235, 133, 154);
+        }
+        a:visited{
+            background-color: #f7f316;
+        }
+        a:active{
+            background-color: darkblue;
+        }
+        
+        .btn{
+            background-color: rgb(238, 125, 125);
+            padding: 6px;
+            margin: 3px;
+            border: none;
+            cursor: pointer;
+            font-size: 13px;
+            border-radius: 4px;
+        }
+        .btn:hover{
+            color: darkgoldenrod;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="Container" id="Cont1">
+        <h3> This is my heading </h3>
+        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam tenetur nemo repellendus modi, reiciendis consequuntur quod expedita consectetur perspiciatis tempore. Dolores mollitia laboriosam laborum itaque magnam rem, temporibus voluptas ea?</p>
+        <a href="https:\\google.com" class="btn"> Read More </a>
+        <button class="btn"> Contact us </button>
+    </div>   
+</body>
+</html>

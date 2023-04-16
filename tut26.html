@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning in css</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            background-color: rgb(228, 236, 177);
+            height: 544px;
+        }
+
+/* Position: static(default), absolute, relative, fixed, sticky */
+        .box{
+            display: inline-block;  /* for display box in straight line*/
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+        #box3{
+            /*position: relative;   /* relative to its normal position and will leave a gap at 1st normal position 
+            top: 34px;
+            left: 34px;
+            } */
+
+            /*position: absolute;   /* relative to the position of its first parent and never leave a gap 
+            top: 34px;
+            left: 34px;
+            } */
+
+            /* position: static;     /* back to the normal position 
+            top: 34px;
+            left: 34px;
+            } */
+
+            /* position: fixed;   /* during scrolling page it was fixed to the given position and cant scroll 
+            right: 4px;
+            bottom: 2px;
+            } */
+
+            position: sticky;   /* stick to the top , use for menu */
+            top: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">  <!--parent-->
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">chat with us</div>
+    <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>

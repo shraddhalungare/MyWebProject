@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Interaction using alert, confirm and prompt </title>
+</head>
+
+<body>
+    <div class="container">
+        This is a page
+    </div>
+
+    <script>
+
+        // Alert in in- browser JavaScript . Does not return anything
+        //alert(" This is a massege ");    //Open a 'modal' window, their nothing we can do with pages until we close the window
+
+        
+// Example---
+        let age = confirm(" Are you 18+ ? ", "Guest");
+        console.log(age);
+
+        if(age){
+            console.log( "allow" );
+        }
+        else{
+            console.log( "do not allow");
+        }
+
+
+        //Prompt --
+        //let name = prompt("What is your name?", "Guest");
+        //console.log(name);
+
+
+        // Confirm-- use, when your deleting a file, in which we have to give warning to the user, ok and cancle or for double checking, 
+        //let deletePost = confirm("do you really want to delete this post?");
+            //console.log(deletePost);
+
+        //if(deletePost){
+            // Code to delete the post.
+            //console.log("Your post has been deleted successfully");
+        //}
+        //else{
+            // Code to cancel deletion of the post.
+            //console.log("Your post has not been deleted successfully");
+        //}
+        
+    </script>
+
+</body>
+
+</html>

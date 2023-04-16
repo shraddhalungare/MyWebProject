@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Tutorial</title>
+</head>
+<body>
+    <div class="container">
+        This is a container
+    </div>
+    <script>
+        let jsonObj = {
+            name : "Shraddha",
+            channel : "CWS",
+            friend : "Nikita Wagh",
+            food : "maithi"
+        }
+        console.log(jsonObj);
+
+// Stringify-->( converting it to a tring)
+        let myJsonStr = JSON.stringify(jsonObj);
+        console.log(myJsonStr);
+
+// Replace-->
+       myJsonStr = myJsonStr.replace('Shraddha', 'Divya');
+        console.log(myJsonStr);
+
+// Parse --> ( Convert in into back position)
+       newJsonObj = JSON.parse(myJsonStr);
+       console.log(newJsonObj);
+
+
+    </script>
+</body>
+</html>

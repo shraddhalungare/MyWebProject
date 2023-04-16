@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selector</title>
+    <style>
+        h1{
+            background-color: rgb(181, 230, 231);
+            color: rgb(13, 13, 14);
+            font-weight: bold;
+            text-align: center;
+        }
+    
+    /* 1) property(selector) Allow all para within div
+        div p{                 
+            color: darkmagenta;
+            font-weight: bold;
+            background-color: rgb(182, 199, 182);
+        } */
+
+    /* 2) property(selector) Allow all para within <li> within <div>
+        div li p{                     
+            color: darkmagenta;
+            font-weight: bold;
+            background-color: rgb(182, 199, 182);
+        } */
+
+    /* 3) property(selector) Allow all <p> is a direct child of <div> 
+        div > p{                    
+            color: darkmagenta;
+            font-weight: bold;
+            background-color: rgb(182, 199, 182);
+        } */
+
+    /* 4) allow those <p> whose last ele(sibling) is <div>. */
+        div + p{                    
+            color: rgb(31, 25, 31);
+            background-color: rgb(147, 241, 147);
+        } 
+
+
+    </style>
+</head>
+<body>
+    <h1> This is a heading </h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p> This is another para inside div </p></li>
+            </ul>
+            <p> Hello I'm Shraddha Lungare. </p>
+        </div>
+        <p> How are you? </p>
+    </div>
+    <p> How was your day. </p>
+</body>
+</html>

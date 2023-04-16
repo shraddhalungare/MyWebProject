@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript SetTimeOut and SetInterval</title>
+</head>
+<body>
+    <div class="container">
+        <!--This is a container-->
+        <div class = "container">
+            Time now is <span id = "time"></span>
+        </div>
+    </div>
+    <script>
+        console.log("This is a container");
+
+// SetTimeOut--> ( Allow us to run the fun once after the interval of time )
+        //function greet(){
+            //function greet(name){
+
+        // In Multiple argument--->
+        function greet(name, byeText){
+            console.log("Hello, Good Morning" + name + " " + byeText);
+        }
+        //greet();
+        //setTimeout(greet, 6000, "Shraddha", "Have a nice day.");
+
+
+// For Clear TimeOut--->  (Allow us to run fun repeatedly after the interval of time)
+        //timeOut = setTimeout(greet, 6000, "Shraddha", "Have a nice day.");
+        //console.log(timeOut);
+        //clearTimeout(timeOut);
+
+
+// For TimeInterval-->
+        intervalId = setInterval(greet,2000);
+        clearInterval(intervalId); 
+        
+// For Display Time-->
+        function displayTime(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML =  time;
+        }
+        setInterval(displayTime, 2000);
+    </script>
+</body>
+</html>
